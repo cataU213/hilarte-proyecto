@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Permite usar acentos y ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptación a celulares -->
+    <meta name="description" content="HilArte Tejiendo Sueños es una tienda artesanal de crochet, telas y sábanas hechas a mano.">
+
+    <title>HilArte | Tejiendo Sueños</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <h1>HilArte</h1>
+        <h2>Tejiendo Sueños</h2>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#bienvenida">Bienvenida</a>
+            <a href="#productos">Productos</a>
+            <a href="#tabla">Tabla</a>
+            <a href="#contacto">Contacto</a>
+            <a href="producto.html">Catálogo</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="bienvenida">
+            <h2>Bienvenidos a HilArte</h2>
+            <p>
+                HilArte es una tienda artesanal dedicada a la creación de productos en 
+                <strong>crochet</strong>, telas y sábanas hechas a mano.
+            </p>
+
+            <p>
+                Cada pieza está elaborada con dedicación, cuidado y creatividad.
+                <em>Nuestro objetivo es transformar cada hilo en un sueño tejido.</em>
+            </p>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros productos</h2>
+
+            <article>
+                <h3>Artesanía en crochet</h3>
+                <p>Ofrecemos tejidos decorativos, accesorios y detalles personalizados.</p>
+            </article>
+
+            <article>
+                <h3>Sábanas artesanales</h3>
+                <p>Diseños únicos para el hogar, elaborados con telas seleccionadas.</p>
+            </article>
+
+            <article>
+                <h3>Regalos personalizados</h3>
+                <p>Productos hechos a mano para ocasiones especiales.</p>
+            </article>
+        </section>
+
+        <section id="tabla">
+            <h2>Tabla de productos</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Material</th>
+                        <th>Categoría</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Camino de mesa</td>
+                        <td>Crochet</td>
+                        <td>Decoración</td>
+                    </tr>
+                    <tr>
+                        <td>Sábana artesanal</td>
+                        <td>Tela</td>
+                        <td>Hogar</td>
+                    </tr>
+                    <tr>
+                        <td>Portavasos tejido</td>
+                        <td>Hilo</td>
+                        <td>Accesorio</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HilArte - Tejiendo Sueños</p>
+        <p>Artesanía hecha a mano con amor y creatividad.</p>
+    </footer>
+
+</body>
+</html>

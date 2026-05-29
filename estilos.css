@@ -1,0 +1,248 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7f0;
+    color: #3b2a22;
+    line-height: 1.6;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+/* Encabezado */
+header {
+    background-image: url("img/chente.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 30px;
+    border-radius: 12px;
+}
+
+/* Título principal */
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Subtítulo */
+header h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* Menú con Flexbox */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Enlaces del menú */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Efecto del menú */
+nav a:hover {
+    color: #ffe6c7;
+}
+
+/* Contenido principal */
+main {
+    margin-top: 25px;
+}
+
+/* Secciones */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Títulos */
+section h2 {
+    color: #8b3a62;
+    margin-bottom: 10px;
+}
+
+/* Productos con Grid */
+.row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Artículos */
+article {
+    background-color: #fff0f3;
+    padding: 15px;
+    margin-top: 12px;
+    border-left: 5px solid #b76e79;
+    border-radius: 8px;
+}
+
+/* Tarjetas */
+.card {
+    height: 100%;
+    min-width: 0;
+}
+
+/* Títulos de tarjetas */
+.card h3 {
+    font-size: 1.6rem;
+    overflow-wrap: break-word;
+}
+
+/* Imágenes del catálogo */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    
+}
+
+/* Tabla adaptable */
+.tabla-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Celdas */
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Encabezado de tabla */
+th {
+    background-color: #b76e79;
+    color: white;
+}
+
+/* Filas pares */
+tr:nth-child(even) {
+    background-color: #fff0f3;
+}
+
+/* Formulario */
+form {
+    margin-top: 10px;
+}
+
+/* Campos */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c79a9f;
+    border-radius: 8px;
+}
+
+/* Botón */
+button {
+    background-color: #8b3a62;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Hover del botón */
+button:hover {
+    background-color: #b76e79;
+}
+
+/* Pie de página */
+footer {
+    background-color: #3b2a22;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Escritorio */
+@media (min-width: 768px) {
+    .row {
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* iPhone SE y pantallas muy pequeñas */
+@media (max-width: 380px) {
+    body {
+        padding: 5px;
+    }
+
+    header {
+        padding: 50px 10px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    nav {
+        gap: 6px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    section {
+        padding: 12px;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    p, label, input, textarea, button, td, th {
+        font-size: 0.9rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
