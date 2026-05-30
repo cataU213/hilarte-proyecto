@@ -18,12 +18,21 @@ body {
 /* Encabezado */
 header {
     background-image: url("img/chente.jpg");
+    background-color: #000000; /* Oscurece la imagen para mejorar contraste */
+    background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 120px 30px;
     border-radius: 12px;
+}
+
+/* Mejora la lectura del texto sobre la imagen */
+header h1,
+header h2,
+nav a {
+    text-shadow: 2px 2px 4px black;
 }
 
 /* Título principal */
@@ -47,7 +56,7 @@ nav {
 
 /* Enlaces del menú */
 nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
@@ -120,7 +129,6 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
-    
 }
 
 /* Tabla adaptable */
@@ -138,7 +146,7 @@ th, td {
 /* Encabezado de tabla */
 th {
     background-color: #b76e79;
-    color: white;
+    color: #ffffff;
 }
 
 /* Filas pares */
@@ -151,7 +159,7 @@ form {
     margin-top: 10px;
 }
 
-/* Campos */
+/* Campos del formulario */
 input, textarea {
     width: 100%;
     padding: 10px;
@@ -162,7 +170,7 @@ input, textarea {
 /* Botón */
 button {
     background-color: #8b3a62;
-    color: white;
+    color: #ffffff;
     padding: 12px 20px;
     border: none;
     border-radius: 25px;
@@ -177,7 +185,7 @@ button:hover {
 /* Pie de página */
 footer {
     background-color: #3b2a22;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
     border-radius: 12px;
