@@ -84,7 +84,7 @@ section {
 
 /* Títulos */
 section h2 {
-    color: #8b3a62;
+   color: #6f284b;
     margin-bottom: 10px;
 }
 
@@ -146,7 +146,7 @@ th, td {
 
 /* Encabezado de tabla con mejor contraste */
 th {
-    background-color: #6f284b;
+    background-color: #3b2a22;
     color: #ffffff;
 }
 
