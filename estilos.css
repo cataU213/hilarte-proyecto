@@ -18,8 +18,8 @@ body {
 /* Encabezado */
 header {
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.45),
-        rgba(0, 0, 0, 0.45)
+        rgba(0, 0, 0, 0.20),
+        rgba(0, 0, 0, 0.20)
     ), url("img/chente.jpg");
     background-size: cover;
     background-position: center;
@@ -33,7 +33,7 @@ header {
 header h1,
 header h2,
 nav a {
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 3px 3px 6px black;
 }
 
 /* Título principal */
