@@ -17,9 +17,10 @@ body {
 
 /* Encabezado */
 header {
-    background-image: url("img/chente.jpg");
-    background-color: #000000; /* Oscurece la imagen para mejorar contraste */
-    background-blend-mode: multiply;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+    ), url("img/chente.jpg");
     background-size: cover;
     background-position: center;
     color: #ffffff;
