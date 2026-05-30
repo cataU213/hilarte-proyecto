@@ -18,8 +18,8 @@ body {
 /* Encabezado */
 header {
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.20),
-        rgba(0, 0, 0, 0.20)
+        rgba(60, 35, 28, 0.25),
+        rgba(60, 35, 28, 0.25)
     ), url("img/chente.jpg");
     background-size: cover;
     background-position: center;
@@ -75,7 +75,7 @@ main {
 
 /* Secciones */
 section {
-    background-color: white;
+    background-color: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 12px;
@@ -84,7 +84,7 @@ section {
 
 /* Títulos */
 section h2 {
-   color: #6f284b;
+    color: #6f284b;
     margin-bottom: 10px;
 }
 
@@ -144,10 +144,11 @@ th, td {
     text-align: left;
 }
 
-/* Encabezado de tabla con mejor contraste */
-th {
-    background-color: #3b2a22;
-    color: #ffffff;
+/* Encabezado de tabla con contraste accesible */
+.table thead th {
+    background-color: #8b3a62 !important;
+    color: #ffffff !important;
+    font-weight: bold;
 }
 
 /* Filas pares */
@@ -180,7 +181,7 @@ button {
 
 /* Hover del botón */
 button:hover {
-    background-color: #b76e79;
+    background-color: #6f284b;
 }
 
 /* Pie de página */
