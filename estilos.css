@@ -144,9 +144,9 @@ th, td {
     text-align: left;
 }
 
-/* Encabezado de tabla */
+/* Encabezado de tabla con mejor contraste */
 th {
-    background-color: #b76e79;
+    background-color: #6f284b;
     color: #ffffff;
 }
 
