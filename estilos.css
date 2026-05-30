@@ -18,8 +18,8 @@ body {
 /* Encabezado */
 header {
     background-image: linear-gradient(
-        rgba(60, 35, 28, 0.25),
-        rgba(60, 35, 28, 0.25)
+        rgba(60, 35, 28, 0.20),
+        rgba(60, 35, 28, 0.20)
     ), url("img/chente.jpg");
     background-size: cover;
     background-position: center;
@@ -29,7 +29,7 @@ header {
     border-radius: 12px;
 }
 
-/* Mejora la lectura del texto sobre la imagen */
+/* Mejora la lectura sobre la imagen */
 header h1,
 header h2,
 nav a {
@@ -82,7 +82,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
 }
 
-/* Títulos */
+/* Títulos de secciones */
 section h2 {
     color: #6f284b;
     margin-bottom: 10px;
@@ -125,11 +125,12 @@ article {
     margin-bottom: 10px;
 }
 
-/* Tabla */
+/* Tabla general */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
+    background-color: #ffffff;
 }
 
 /* Tabla adaptable */
@@ -138,22 +139,39 @@ table {
     overflow-x: auto;
 }
 
-/* Celdas */
-th, td {
+/* Celdas de tabla */
+th,
+td {
     padding: 12px;
     text-align: left;
+    border: 1px solid #c79a9f;
 }
 
-/* Encabezado de tabla con contraste accesible */
+/* Encabezado de tabla */
+th,
 .table thead th {
     background-color: #8b3a62 !important;
     color: #ffffff !important;
     font-weight: bold;
+    border: 1px solid #8b3a62 !important;
 }
 
 /* Filas pares */
-tr:nth-child(even) {
-    background-color: #fff0f3;
+tr:nth-child(even),
+.table-striped tbody tr:nth-child(even) {
+    background-color: #fff0f3 !important;
+}
+
+/* Filas impares */
+tr:nth-child(odd),
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #ffffff !important;
+}
+
+/* Bordes para tablas con Bootstrap */
+.table th,
+.table td {
+    border: 1px solid #c79a9f !important;
 }
 
 /* Formulario */
@@ -162,7 +180,8 @@ form {
 }
 
 /* Campos del formulario */
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #c79a9f;
@@ -246,7 +265,13 @@ footer {
         font-size: 1.3rem;
     }
 
-    p, label, input, textarea, button, td, th {
+    p,
+    label,
+    input,
+    textarea,
+    button,
+    td,
+    th {
         font-size: 0.9rem;
     }
 
