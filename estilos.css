@@ -125,53 +125,46 @@ article {
     margin-bottom: 10px;
 }
 
-/* Tabla general */
-table {
+/* Contenedor responsive para tabla */
+.tabla-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Tabla de productos */
+.tabla-productos {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
     background-color: #ffffff;
 }
 
-/* Tabla adaptable */
-.tabla-responsive {
-    width: 100%;
-    overflow-x: auto;
+/* Encabezado de tabla */
+.tabla-productos th {
+    background-color: #8b3a62;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px;
+    border: 1px solid #6f284b;
+    text-align: left;
 }
 
 /* Celdas de tabla */
-th,
-td {
+.tabla-productos td {
     padding: 12px;
-    text-align: left;
     border: 1px solid #c79a9f;
-}
-
-/* Encabezado de tabla */
-th,
-.table thead th {
-    background-color: #8b3a62 !important;
-    color: #ffffff !important;
-    font-weight: bold;
-    border: 1px solid #8b3a62 !important;
+    color: #3b2a22;
+    text-align: left;
 }
 
 /* Filas pares */
-tr:nth-child(even),
-.table-striped tbody tr:nth-child(even) {
-    background-color: #fff0f3 !important;
+.tabla-productos tbody tr:nth-child(even) {
+    background-color: #fff0f3;
 }
 
 /* Filas impares */
-tr:nth-child(odd),
-.table-striped tbody tr:nth-child(odd) {
-    background-color: #ffffff !important;
-}
-
-/* Bordes para tablas con Bootstrap */
-.table th,
-.table td {
-    border: 1px solid #c79a9f !important;
+.tabla-productos tbody tr:nth-child(odd) {
+    background-color: #ffffff;
 }
 
 /* Formulario */
@@ -230,7 +223,7 @@ footer {
     }
 }
 
-/* iPhone SE y pantallas muy pequeñas */
+/* iPhone SE y pantallas pequeñas */
 @media (max-width: 380px) {
     body {
         padding: 5px;
@@ -275,9 +268,7 @@ footer {
         font-size: 0.9rem;
     }
 
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
+    .tabla-productos {
+        min-width: 500px;
     }
 }
